@@ -1,10 +1,11 @@
-import http from "http";
-import { readFile } from "fs/promises";
+import expresss from "express";
 
-const server = http.createServer(async (req, res) => {
-  res.write("Loading....");
-  const text = await readFile("big.txt");
-  res.end(text);   
+const app = expresss();
+
+app.get("/", (req, res) => {
+    res.send("<h1>Hello World</h1>");
 });
 
-server.listen(3000, () => console.log("Server is running..."));
+app.listen(3000, () => {
+    console.log("Server is running ");
+});
