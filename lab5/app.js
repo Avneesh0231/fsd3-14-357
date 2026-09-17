@@ -1,11 +1,12 @@
-import expresss from "express";
+import express from "express";
+const app = express();
 
-const app = expresss();
-
-app.get("/", (req, res) => {
-    res.send("<h1>Hello World</h1>");
+app.get("/",(req,res)=>{
+    res.send("<h1> Hello Express");
 });
 
-app.listen(3000, () => {
-    console.log("Server is running ");
-});
+app.listen(3000, () => console.log("Server is running"));
+// server.on("error", (err)=>{
+//     console.log("server listen error:", err);
+// })
+
