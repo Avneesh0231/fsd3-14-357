@@ -1,11 +1,11 @@
 {
   "name": "lab5",
   "version": "1.0.0",
-  "description": "Fast, unopinioneted, minimalist web framework for node.js",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon prg2.js"
   },
   "keywords": [],
   "author": "",
